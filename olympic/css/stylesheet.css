@@ -1,0 +1,93 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#map {
+    height: 100vh;
+    width: 96.5vw;
+}
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: white;
+  opacity: 5;
+}
+
+.leaflet-popup {
+  color: black;
+  font-size: 10px;
+  font-weight: bold;
+}
+.legend {
+	line-height: 13px;
+    padding: 6px 8px;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+
+.legend i {
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-right: 8px;
+    //position: absolute;
+    //bottom: 25px;
+    //left: 25px;
+    opacity: 3;
+}
+
+svg .legendSvg1 { 
+    fill: #ff1a1a;
+    stroke: gray; 
+    stroke-width: 1;
+    opacity: 0.75;
+}
+
+svg .legendSvg2 { 
+    fill: #1a1aff;
+    stroke: gray; 
+    stroke-width: 1;
+    opacity: 0.75;
+}
+
+svg .legendSvg3 { 
+    fill: #990000;
+    stroke: gray; 
+    stroke-width: 1;
+    opacity: 0.75;
+}
+
+svg .legendSvg4 { 
+    fill: #000099;
+    stroke: gray; 
+    stroke-width: 1;
+    opacity: 0.75;
+}
+
+svg .legendSvg5 { 
+    fill: #ffe6e6;
+    stroke: gray; 
+    stroke-width: 1;
+    opacity: 0.75;
+}
+
+svg .legendSvg6 { 
+    fill: #e6e6ff;
+    stroke: gray; 
+    stroke-width: 1;
+    opacity: 0.75;
+}
+
+.arc text {
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.arc path {
+  stroke: #fff;
+}

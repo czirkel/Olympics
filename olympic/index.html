@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Olympic Games</title>
+    <meta charset="utf-8" />
+    <!-- For full screen Leaflet maps, add the following meta tag to set parameters in the viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Including Bootstrap CSS -->
+    <link type="text/css" rel="stylesheet" href="libraries/bootstrap-3.3.6-dist/css/bootstrap.min.css"/>
+    <!-- Including Leaflet CSS -->
+    <link type="text/css" rel="stylesheet" href="libraries/leaflet-0.7.3/leaflet.css"/> 
+
+    <!--range slider april 24-->
+     <!--<link rel="stylesheet" href="css/iThing.css" type="text/css" />   -->
+
+    <!-- Including our custom CSS -->
+    <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-content" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">The Geography of the Olympic Games</a>
+        </div>
+
+
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <div id="map"></div>
+        </div>
+
+      </div>
+    </div>
+  </body> 
+  <!-- Including jQuery -->
+  <script type="text/javascript" src="libraries/jQuery/jquery-1.11.2.min.js"></script>
+  <!-- Including Bootstrap Javascript Library -->
+  <!--<script type="text/javascript" src="libraries/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>-->
+  <!-- Including Leaflet Javascript Library -->
+  <script type="text/javascript" src="libraries/leaflet-0.7.3/leaflet.js"></script>
+  <!-- Including d3.js -->
+  <script type="text/javascript" src="libraries/d3/d3.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+  <script id="template" type="x-tmpl-mustache">
+      <p>{{season}} Olympic Games</p>
+      <p>{{city_name}}, {{country}}</p>
+      <p>{{startdate}} to {{enddate}}</p>
+      <p>Repeated Host City? : {{repeated}}</p>
+      <p>Countries: {{numcountri}}</p>
+      <p>Athletes:{{athletes}} ({{femathlete}} Women, {{maleathlet}} Men)</p>
+      <p>Events: {{numevents}}</p>
+      <p>Status: {{status}}</p>
+      <p><a href = {{moreinfo}}>More Information</a>
+</script>
+
+
+
+</html>
